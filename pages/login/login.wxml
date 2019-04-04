@@ -1,0 +1,37 @@
+<!--login.wxml-->
+<view class='container'>
+  <view class='top-text'>
+    <view class='middle-text'>
+      <text class='server-text'>上门服务</text>
+    </view>
+  </view>
+
+  <view class="section">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view>
+        当前选择:
+        <text> {{array[index]}}</text>
+        <view class='below'>∨</view>
+      </view>
+    </picker>
+  </view>
+  <view class='section-bottom'>
+      <view class='input-bottom'>
+        <text>账号: </text>
+        <view class='input-rigin'>
+          <input placeholder="请输入手机号码"  bindinput="getMobile" />
+        </view>
+      </view>
+      <view class='input-bottom'>
+        <text>密码: </text>
+        <view class='input-rigin'>
+          <input placeholder="请输入密码"  type='password' bindinput="getPass" />
+        </view>
+      </view>
+      <button open-type="getUserInfo" bindgetuserinfo="register"   class='input-button'>登陆/绑定</button>
+    <view class='text-bottom'>
+      <text>点击确定, 即表示已阅读并同意<text class='clause'>《注册会员服务条款》</text>
+      </text>
+    </view>
+  </view>
+</view>

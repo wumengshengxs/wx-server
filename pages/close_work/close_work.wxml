@@ -1,0 +1,69 @@
+<!--close_work-->
+<view class='container'>
+  <view class='top-black'>
+    <view class='right-img'>
+        <text >距离: {{work.distance}}米</text>
+    </view>
+    <view class='top-text'>
+      <text>{{work.title}}</text>
+    </view>
+    <view class='middle-text'>
+      <text>服务老人: {{work.name}}</text>
+    </view>
+    <view class='middle-text'>
+      <text>家庭地址: {{work.site}}</text>
+    </view>
+    <view class='bottom-text'>
+      <text>工单编号: YC{{work.id}}</text>
+    </view>
+  </view>
+  <view class='work-date'>
+    <text>订单时间: </text>
+    <text class='work-phone-time'> {{work.create_time}} </text>
+    <image bindtap='tel' class='work-phone' src="/images/phone.jpg"></image>
+    <text class='phone-ole'> 联系老人</text>
+  </view>
+  <view class='work-date'>
+    <text>接单时间: </text>
+    <text class='work-phone-time'> {{work.start_time}} </text>
+    <image bindtap='kefutel' class='work-phone' src="/images/phone.jpg"></image>
+    <text class='phone-ole'> 联系客服</text>
+  </view>
+
+  <view class='work-jiage'>
+    <view class='work-button-right'>
+      <button class='work-button'>已支付</button>
+    </view>
+    <view class='work-jine'>
+      <text class='work-money'>¥{{work.money}}</text>
+      <text class='work-moneys'>/次 </text>
+
+      <!-- <text class='work-raw'>¥100</text>
+      <text class='work-break' decode="{{true}}"> 5折&nbsp;</text> -->
+    </view>
+    <text class='youhui'>已享受会员优惠</text>
+  </view>
+
+  <view class='server-bright'>
+    <view>
+      <text>服务工单说明</text>
+    </view>
+    <view>
+      <text>*订单详情可通过扫码上方服务工单二维码查看</text>
+    </view>
+    <view>
+      <text>上门人员到达服务点后15分钟内联系不到服务对象,可通过拨打400电话或点击 "联系客服" 申请服务工单取消</text>
+    </view>
+    <view>
+      <text>*工单取消后,系统自动扣除工单消费10%作为上门人员的补助;</text>
+    </view>
+    <view>
+      <text>*服务完成以后,服务人员点击 "扫码结算" 提交结单申请</text>
+    </view>
+    <view>
+      <text>*工作人员会在结单申请提交后5分钟内对服务工单进行评分</text>
+    </view>
+
+  </view>
+  <button class="bottom-but" bindtap='codeTap'>结单</button>
+</view>

@@ -1,0 +1,25 @@
+<!--show.wxml-->
+<view class="swiper-tab">
+    <view wx:for="{{navTab}}" wx:key="index" class="swiper-tab-item {{currentTab==index ? 'active':''}}" data-current="{{index}}" bindtap="clickTab">{{item}}</view>
+</view>
+
+<swiper class='swiper-list' current="{{currentTab}}" duration="300"  bindchange="swiperTab">
+  <swiper-item wx:for="{{navTab}}"  wx:key="index" >
+    <view wx:for="{{work}}" wx:key="index"  class='list' bindtap="listTab" data-index="{{item.state}}" data-id="{{item.id}}">
+      <view class='list-left'>
+        <view class='left-top'><text>{{item.title}}</text></view>
+        <view class='left-bottom'><text>{{item.create_time}}</text></view>
+      </view>
+      <view class='list-right'>
+        <view class='right-top'><text>距离 {{item.distance}}米</text></view>
+        <view class='right-bottom'><text>{{item.type}}</text></view>
+      </view>
+    </view>
+     <view class='bottom'>
+    <text>没有更多了</text>
+  </view>
+  </swiper-item>
+ 
+</swiper>
+
+

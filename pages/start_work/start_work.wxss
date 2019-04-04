@@ -1,0 +1,140 @@
+/**close-work.wxss**/
+.container{
+  flex-direction:column;
+  display:flex;
+  padding: 40rpx 30rpx 20rpx 30rpx;
+}
+
+.top-black{
+  height: 280rpx;
+  width: 88%;
+  background-color: #2e2e2e;
+  border-radius: 30rpx;
+  padding: 40rpx;
+  margin-bottom: 30rpx;
+}
+
+.right-img{
+  float: right;
+  font-size: 40rpx;
+  color: white;
+  font-weight: 600;
+}
+
+.erwei{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.top-text{
+  margin-top: 36rpx;
+  margin-bottom: 36rpx;
+  font-size: 40rpx;
+  font-weight: 900;
+  color: white;
+}
+
+
+.middle-text{
+  line-height: 39rpx;
+  font-size: 30rpx;
+  color: #7e7e7e;
+}
+
+.bottom-text{
+  margin-top: 40rpx;
+  color: red;
+  font-size: 42rpx;
+  font-weight: 900;
+}
+
+.work-date{
+  font-size: 30rpx;
+  margin-bottom: 18rpx;
+}
+.work-phone{
+  height: 40rpx;
+  width: 40rpx;
+}
+.work-phone-time{
+  color: #7e7e7e;
+}
+
+.phone-ole{
+  font-size: 
+}
+
+.work-jiage{
+  height: 90rpx;
+  padding: 40rpx 0 40rpx 0;
+  border-top: 1px solid #dad4d4;
+  border-bottom: 1px solid #dad4d4;
+  margin-top: 30rpx;
+}
+.work-button-right{
+  width: 200rpx;
+  float: right;
+}
+.work-button{
+  background-color: #32c626;
+  color: white;
+}
+
+.work-money{
+  font-size:40rpx;
+  font-weight: 900;
+  color: #32c626;
+}
+.work-moneys{
+  font-size:32rpx;
+  color: #32c626;
+}
+
+.work-raw{
+  font-size:32rpx;
+  text-decoration:line-through;
+  color: #7e7e7e;
+}
+
+.work-break{
+  font-size:32rpx;
+  background-color: #32c626;
+  color: white;
+}
+.youhui{
+  font-size:30rpx;
+  color: #7e7e7e;
+}
+
+.server-bright{
+  font-size: 25rpx;
+  color: #7e7e7e;
+  border: 1px solid #7e7e7e;
+  margin-bottom: 36rpx;
+  margin-top: 22rpx;
+}
+.bottom-button{
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-but{
+  background-color: #32c626;
+  color: white;
+}
+
+.bottom-up{
+  margin-top:8rpx; 
+  background-color: #2d74cb;
+  color: white;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+
+.bottom-next{
+  margin-top:8rpx; 
+  background-color: #2d74cb;
+  color: white;
+  height: 80rpx;
+  line-height: 80rpx;
+}

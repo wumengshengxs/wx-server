@@ -1,0 +1,41 @@
+<!--server.wxml-->
+
+<view class="section">
+  <input data-city="{{city}}" data-longitude="{{longitude}}" data-latitude="{{latitude}}" bindtouchstart="bindInput" placeholder="搜索" />
+</view>
+
+<view class="map_container">
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" markers="{{markers}}" bindmarkertap="makertap" show-location>
+<!--弹出框-->
+<cover-view class='site' style="display:{{hide}}">
+  <cover-view class='cancel'  >
+<!--关闭弹出-->
+    <cover-image  class='cancel_image' bindtap='tapCancel' src="/images/cancel.png"></cover-image>
+  </cover-view>
+    <cover-view class='cancel-text '>
+    状态: {{cancelText.state}}
+  </cover-view>
+  <cover-view class='cancel-text '>
+    姓名: {{cancelText.client}}
+  </cover-view>
+ <cover-view class='cancel-text'>
+    金额: {{cancelText.money}}
+  </cover-view>
+   <cover-view class='cancel-text'>
+   地址: {{cancelText.address}}
+  </cover-view>
+</cover-view>
+<!--接单-->
+<cover-image wx:if="{{wid}}" class='place_image' bindtap='jietap' src="/images/jie.png"></cover-image>
+<cover-image wx:else class='place_image' bindtap='receiving' src="/images/middle.png"></cover-image>
+<!--路线-->
+ <cover-image class='place_left_img' bindtap='leftTap' src="/images/you.png"></cover-image>
+<!-- 退出 -->
+<!-- <cover-image class='place_top_img' bindtap='eixtTap' src="/images/exit.png"></cover-image> -->
+<!--定位 返回-->
+<cover-image wx:if="{{wid}}" class='place_rigin_img' bindtap='outTap' src="/images/out.png"></cover-image>
+<cover-image wx:else class='place_rigin_img' bindtap='moveToLocation' src="/images/right.png"></cover-image>
+  </map>
+</view>
+<!--工单列表-->
+<image class='place_image-top' bindtap='topTap' src="/images/cai.png"></image>

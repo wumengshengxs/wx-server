@@ -1,0 +1,141 @@
+/**end-work.wxss**/
+
+.container {
+  flex-direction: column;
+  display: flex;
+  padding: 40rpx 30rpx 20rpx 30rpx;
+}
+
+.top-black {
+  height: 300rpx;
+  width: 88%;
+  background-color: #2e2e2e;
+  border-radius: 30rpx;
+  padding: 40rpx;
+  margin-bottom: 30rpx;
+}
+
+.right-img {
+  float: right;
+  font-size: 40rpx;
+  color: white;
+  font-weight: 600;
+}
+
+.erwei {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.top-text {
+  margin-top: 36rpx;
+  margin-bottom: 36rpx;
+  font-size: 40rpx;
+  font-weight: 900;
+  color: white;
+}
+
+.middle-text {
+  line-height: 39rpx;
+  font-size: 30rpx;
+  color: #7e7e7e;
+}
+
+.bottom-text {
+  margin-top: 40rpx;
+  color: red;
+  font-size: 42rpx;
+  font-weight: 900;
+}
+
+.work-date {
+  font-size: 30rpx;
+  margin-bottom: 18rpx;
+}
+
+.work-phone-time {
+  color: #7e7e7e;
+}
+
+.review {
+  margin-top: 20rpx;
+  border-top: 1px solid #dad4d4;
+  padding-top: 39rpx;
+}
+
+.review-left {
+  align-items: center;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-start {
+  height: 60rpx;
+  width: 60rpx;
+}
+
+.review-score {
+  margin-left: 30rpx;
+  font-size: 100rpx;
+}
+
+.review-right {
+  float: right;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-avatar {
+  height: 160rpx;
+  width: 160rpx;
+  border-radius: 100rpx;
+}
+
+.review-avatar-left {
+  float: left;
+}
+
+.review-avatar-right {
+  float: right;
+  padding-top: 15rpx;
+  line-height: 70rpx;
+  font-weight: 900;
+}
+
+.review-score-gread {
+  margin-left: 30rpx;
+  font-size: 30rpx;
+}
+
+.progress {
+  margin-top: 180rpx;
+}
+
+.progress-text {
+  font-size: 34rpx;
+  color: #7e7e7e;
+}
+
+.progress-score {
+  float: right;
+  color: #ffbf44;
+  font-size: 50rpx;
+  line-height: 50rpx;
+  margin-bottom: 5rpx;
+}
+
+.progress-stroke {
+  margin-bottom: 30rpx;
+  clear: both;
+}
+
+.progress-grade {
+  clear: both;
+  margin-top: 50rpx;
+  font-size: 36rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+}

@@ -1,0 +1,94 @@
+<!--end_work.wxml-->
+<view class='container'>
+  <view class='top-black'>
+    <view class='right-img'>
+        <text >距离: {{work.distance}}米</text>
+    </view>
+    <view class='top-text'>
+      <text>{{work.title}}</text>
+    </view>
+    <view class='middle-text'>
+      <text>服务老人: {{work.name}}</text>
+    </view>
+    <view class='middle-text'>
+      <text>家庭地址: {{work.site}}</text>
+    </view>
+    <view class='bottom-text'>
+      <text>工单编号: YC{{work.id}}</text>
+    </view>
+  </view>
+
+  <view class='work-date'>
+    <text>订单时间: </text>
+    <text class='work-phone-time'> {{work.create_time}} </text>
+  </view>
+  <view class='work-date'>
+    <text>完结时间: </text>
+    <text class='work-phone-time'> {{work.end_time}} </text>
+  </view>
+
+
+  <view class='review'>
+    <view class='review-left'>
+      <image class='review-start' src="/images/star.png"></image>
+      <text class='review-score'  wx:if="{{work.gid}}">{{work.grade.total}}</text>
+      <text class='review-score-gread'  wx:else>暂无评分</text>
+
+    </view>
+    <view class='review-right'>
+      <view class='review-avatar-left'>
+        <image class='review-avatar' src='{{work.image}}'></image>
+      </view>
+      <view class='review-avatar-right'>
+        <view>
+          <text class='review-name'>姓名: {{work.sname}}</text>
+        </view>
+        <view>
+          <text class='review-code'>编号: h{{work.sid}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='progress' wx:if="{{work.gid}}">
+      <view>
+        <text class='progress-text'>上门响应速度</text>
+        <view class='progress-score'>
+          <text>{{work.grade.speed}}</text>
+        </view>
+        <view class='progress-stroke'>
+          <progress percent="{{work.grade.speed*10}}" stroke-width="4" />
+        </view>
+      </view>
+      <view>
+        <text class='progress-text'>上门服务仪表</text>
+        <view class='progress-score'>
+          <text>{{work.grade.meter}}</text>
+        </view>
+        <view class='progress-stroke'>
+          <progress percent="{{work.grade.meter*10}}" stroke-width="4" />
+        </view>
+      </view>
+      <view>
+        <text class='progress-text'>上门服务内容</text>
+        <view class='progress-score'>
+          <text>{{work.grade.details}}</text>
+        </view>
+        <view class='progress-stroke'>
+          <progress percent="{{work.grade.details*10}}" stroke-width="4" />
+        </view>
+      </view>
+      <view>
+        <text class='progress-text'>上门服务用语</text>
+        <view class='progress-score'>
+          <text>{{work.grade.term}}</text>
+        </view>
+        <view class='progress-stroke'>
+          <progress percent="{{work.grade.term*10}}" stroke-width="4" />
+        </view>
+      </view>
+    </view>
+    <view class='progress-grade' wx:else>
+      <text>暂无评分</text>
+    </view>
+    
+  </view>
+</view>
