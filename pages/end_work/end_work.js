@@ -6,6 +6,7 @@ Page({
    */
   data: {
     work: {},
+    nav:''
   },
 
   /**
@@ -16,6 +17,11 @@ Page({
     var url = config.Config.url;
     var sign = wx.getStorageSync('sign');
     var order = options.id;
+    if (options.nav){
+      that.setData({
+        nav: options.nav
+      })
+    }
     //request 请求选择工单
     wx.getLocation({
       type: 'gcj02', // 返回可以用于wx.openLocation的经纬度
@@ -78,9 +84,11 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function() {
-    wx.redirectTo({
-      url: '/pages/server/server'
-    })
+    if(!this.data.nav){
+      wx.redirectTo({
+        url: '/pages/server/server'
+      })
+    }
   },
 
   /**

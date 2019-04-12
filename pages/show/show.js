@@ -71,7 +71,7 @@ Page({
       })
     } else if (state == 3) {
       wx.navigateTo({
-        url: '/pages/end_work/end_work?id=' + id,
+        url: '/pages/end_work/end_work?id=' + id+'&nav=1',
       })
     }
     
