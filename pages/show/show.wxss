@@ -1,5 +1,4 @@
 /**show.wxss**/
-
 page{
   height: 100%;
 }
@@ -43,6 +42,7 @@ page{
 .list-right{
   float: right;
 }
+
 .left-bottom{
   font-size: 30rpx;
   margin-top:20rpx; 
